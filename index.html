@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Draft. — Website design & build studio</title>
+<meta name="description" content="Draft is a website design and build studio. We take sites from first sketch to launch day, and every update after.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="logo" href="#top">Draft<span class="dot">.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <!-- <li><a href="#work">Work</a></li>
+        <li><a href="#process">Process</a></li> -->
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-primary" href="#contact">Start a project</a>
+      <button class="nav-toggle" aria-label="Open menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow mono">Website design &amp; build studio</p>
+      <h1>Every great site starts as a draft.</h1>
+      <p class="hero-sub">We design and build considered, fast, easy-to-run websites — from the first sketch to launch day, and every update after.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contact">Start a project</a>
+        <!-- <a class="btn btn-ghost" href="#work">See our work</a> -->
+      </div> 
+
+      <div class="hero-panel-wrap">
+        <div class="panel-controls">
+          <span class="mono" style="color:var(--ink-soft);">View</span>
+          <div class="toggle" role="group" aria-label="Toggle hero graphic state">
+            <button type="button" id="btnBlueprint" class="active">Draft</button>
+            <button type="button" id="btnBuilt">Built</button>
+          </div>
+        </div>
+
+        <div class="hero-panel animate show-labels" id="heroPanel">
+          <svg viewBox="0 0 600 452" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of a webpage layout transitioning from wireframe to finished design">
+            <rect class="draft-line" x="20" y="20" width="560" height="400" rx="6"></rect>
+
+            <line class="draft-line" x1="20" y1="56" x2="580" y2="56"></line>
+            <circle class="draft-line" cx="38" cy="38" r="4"></circle>
+            <circle class="draft-line" cx="52" cy="38" r="4"></circle>
+            <circle class="draft-line" cx="66" cy="38" r="4"></circle>
+            <rect class="draft-line" x="92" y="30" width="260" height="16" rx="8"></rect>
+
+            <rect class="built-fill" x="20" y="20" width="560" height="36" fill="var(--paper-2)"></rect>
+            <circle class="built-fill" cx="38" cy="38" r="4" fill="var(--ink-soft)" opacity="0.4"></circle>
+            <circle class="built-fill" cx="52" cy="38" r="4" fill="var(--ink-soft)" opacity="0.4"></circle>
+            <circle class="built-fill" cx="66" cy="38" r="4" fill="var(--ink-soft)" opacity="0.4"></circle>
+            <rect class="built-fill" x="92" y="30" width="260" height="16" rx="8" fill="var(--surface)"></rect>
+
+            <rect class="draft-line" x="20" y="56" width="110" height="364"></rect>
+            <rect class="built-fill" x="20" y="56" width="110" height="364" fill="var(--ink)"></rect>
+            <text class="tag-label" x="34" y="76" fill="var(--ink-soft)">Nav</text>
+
+            <rect class="draft-line" x="140" y="56" width="440" height="140"></rect>
+            <rect class="built-fill" x="140" y="56" width="440" height="140" fill="var(--line)"></rect>
+            <text class="tag-label" x="154" y="76">Hero</text>
+            <rect class="draft-line" x="160" y="96" width="220" height="14"></rect>
+            <rect class="built-fill" x="160" y="96" width="220" height="14" fill="rgba(255,255,255,0.92)"></rect>
+            <rect class="draft-line" x="160" y="120" width="150" height="9"></rect>
+            <rect class="built-fill" x="160" y="120" width="150" height="9" fill="rgba(255,255,255,0.55)"></rect>
+            <rect class="draft-line" x="160" y="150" width="86" height="22" rx="3"></rect>
+            <rect class="built-fill" x="160" y="150" width="86" height="22" rx="3" fill="var(--signal)"></rect>
+
+            <rect class="draft-line" x="140" y="212" width="134" height="108"></rect>
+            <rect class="built-fill" x="140" y="212" width="134" height="108" fill="var(--surface)" stroke="var(--hair-solid,#e3e2dc)"></rect>
+            <text class="tag-label" x="152" y="230">Card</text>
+
+            <rect class="draft-line" x="286" y="212" width="134" height="108"></rect>
+            <rect class="built-fill" x="286" y="212" width="134" height="108" fill="var(--surface)"></rect>
+            <text class="tag-label" x="298" y="230">Card</text>
+
+            <rect class="draft-line" x="432" y="212" width="148" height="108"></rect>
+            <rect class="built-fill" x="432" y="212" width="148" height="108" fill="var(--surface)"></rect>
+            <text class="tag-label" x="444" y="230">Card</text>
+
+            <rect class="draft-line" x="140" y="336" width="440" height="84"></rect>
+            <rect class="built-fill" x="140" y="336" width="440" height="84" fill="var(--paper-2)"></rect>
+            <text class="tag-label" x="154" y="356">Footer</text>
+
+            <text class="dim-label" x="440" y="14" text-anchor="start">1440 × 900</text>
+            <text class="dim-label" x="20" y="440">12-COL GRID · 24PX GUTTER</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="industries">
+    <div class="wrap">
+      <span class="mono">Built for</span>
+      <span class="item">Retail</span><span class="sep">/</span>
+      <span class="item">SaaS</span><span class="sep">/</span>
+      <span class="item">Hospitality</span><span class="sep">/</span>
+      <span class="item">Nonprofit</span><span class="sep">/</span>
+      <span class="item">Professional services</span>
+    </div>
+  </section>
+
+  <section class="pad" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">How we work</p>
+        <h2>Four stages, one draft at a time.</h2>
+      </div>
+      <div class="process-list reveal">
+        <div class="process-item">
+          <div class="process-num">01</div>
+          <h3>Discover</h3>
+          <p>We learn your business, your audience, and what the site actually needs to do before we design anything.</p>
+        </div>
+        <div class="process-item">
+          <div class="process-num">02</div>
+          <h3>Design</h3>
+          <p>Wireframes, a visual system, and a clickable prototype you can react to early — not just a mockup at the end.</p>
+        </div>
+        <div class="process-item">
+          <div class="process-num">03</div>
+          <h3>Build</h3>
+          <p>A responsive, accessible front-end built for speed, with a CMS your team can actually keep up to date.</p>
+        </div>
+        <div class="process-item">
+          <div class="process-num">04</div>
+          <h3>Launch</h3>
+          <p>QA across devices and browsers, a clean handoff, and support in place for whatever comes after.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- <section class="pad" id="work" style="background:var(--paper-2);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">Selected work</p>
+        <h2>Sites we've drafted into shape.</h2>
+      </div>
+      <div class="work-grid reveal">
+
+        <a class="work-card" href="#">
+          <div class="work-thumb" style="background:#EFE6DC;">
+            <div class="b" style="left:14px;top:14px;right:14px;height:46px;background:#1C1B19;border-radius:2px;"></div>
+            <div class="b" style="left:14px;top:70px;width:60%;height:10px;background:#C7401E;"></div>
+            <div class="b" style="left:14px;top:88px;width:40%;height:8px;background:#8B7E70;"></div>
+          </div>
+          <div class="work-meta"><h3>Ferro Goods</h3><span class="cat mono">Retail</span></div>
+        </a>
+
+        <a class="work-card" href="#">
+          <div class="work-thumb" style="background:#E8ECF7;">
+            <div class="b" style="left:14px;top:14px;width:28px;height:28px;background:var(--line);border-radius:6px;"></div>
+            <div class="b" style="left:52px;top:20px;width:40%;height:12px;background:#1F2937;"></div>
+            <div class="b" style="left:14px;top:60px;right:14px;bottom:14px;background:#fff;border-radius:4px;"></div>
+          </div>
+          <div class="work-meta"><h3>Northbound</h3><span class="cat mono">SaaS</span></div>
+        </a>
+
+        <a class="work-card" href="#">
+          <div class="work-thumb" style="background:#231A17;">
+            <div class="b" style="left:14px;top:24px;width:70%;height:16px;background:var(--signal);"></div>
+            <div class="b" style="left:14px;top:50px;width:45%;height:9px;background:#C9BBB0;"></div>
+            <div class="b" style="right:14px;bottom:14px;width:60px;height:60px;border:1px solid #6B5A4E;border-radius:50%;"></div>
+          </div>
+          <div class="work-meta"><h3>Ember &amp; Ash</h3><span class="cat mono">Hospitality</span></div>
+        </a>
+
+        <a class="work-card" href="#">
+          <div class="work-thumb" style="background:#EAF1EC;">
+            <div class="b" style="left:14px;top:14px;right:14px;height:8px;background:#2F5A45;"></div>
+            <div class="b" style="left:14px;top:34px;width:30%;bottom:14px;background:#fff;border:1px solid #cfd8d2;"></div>
+            <div class="b" style="left:48%;top:34px;right:14px;bottom:14px;background:#fff;border:1px solid #cfd8d2;"></div>
+          </div>
+          <div class="work-meta"><h3>Clearwater Trust</h3><span class="cat mono">Nonprofit</span></div>
+        </a>
+
+        <a class="work-card" href="#">
+          <div class="work-thumb" style="background:#F0EEE8;">
+            <div class="b" style="left:14px;top:14px;width:36%;bottom:14px;background:#1E2530;"></div>
+            <div class="b" style="left:52%;top:14px;width:14%;height:14%;background:var(--line);"></div>
+            <div class="b" style="left:70%;top:14px;right:14px;height:10px;background:#9AA0AC;"></div>
+          </div>
+          <div class="work-meta"><h3>Halden &amp; Cole</h3><span class="cat mono">Professional services</span></div>
+        </a>
+
+        <a class="work-card" href="#">
+          <div class="work-thumb" style="background:#111;">
+            <div class="b" style="left:20%;top:20%;width:22%;height:22%;background:var(--signal);"></div>
+            <div class="b" style="left:46%;top:38%;width:22%;height:22%;background:#fff;"></div>
+            <div class="b" style="left:30%;top:58%;width:22%;height:22%;background:var(--line);"></div>
+          </div>
+          <div class="work-meta"><h3>Loom Studio</h3><span class="cat mono">Creative portfolio</span></div>
+        </a>
+
+      </div>
+    </div>
+  </section> -->
+
+ <section class="pad" id="studio">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">What we do</p>
+        <h2>The whole build, under one roof.</h2>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="mark"><span></span></div>
+          <h3>Design</h3>
+          <p>Visual identity, UI systems, and prototypes that hold up in the browser, not just in a file.</p>
+        </div>
+        <div class="service-card">
+          <div class="mark"><span></span></div>
+          <h3>Development</h3>
+          <p>Hand-built front-ends — fast, responsive, accessible — on whichever stack fits your team.</p>
+        </div>
+        <div class="service-card">
+          <div class="mark"><span></span></div>
+          <h3>Content &amp; copy</h3>
+          <p>Words that explain what you do plainly, written for the people who'll actually read them.</p>
+        </div>
+        <div class="service-card">
+          <div class="mark"><span></span></div>
+          <h3>Care plans</h3>
+          <p>Ongoing updates, monitoring, and small changes handled — so the site keeps working after launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="wrap reveal">
+      <blockquote>Draft turned twelve years of scattered branding into a site that finally works the way we do</blockquote>
+      <p class="testimonial-attr"><strong>Priya N.</strong> — Founder, Clearwater Trust</p>
+    </div>
+  </section>
+
+  <section class="cta-section" id="contact">
+    <div class="wrap reveal">
+      <h2>Ready for your final draft?</h2>
+      <p>Tell us about the project. We'll reply within a day with next steps and a rough timeline.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="mailto:hello@draftstudio.example">Start a project</a>
+        <!-- <a class="btn btn-ghost" href="#work">See our work</a> -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="#top">Draft<span class="dot">.</span></a>
+        <p style="color:var(--ink-soft); font-size:14px; max-width:28ch; margin-top:14px;">A website design and build studio.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <!-- <li><a href="#work">Work</a></li> -->
+            <li><a href="#process">Process</a></li>
+            <li><a href="#studio">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@draftstudio.example">hello@draftstudio.example</a></li>
+            <li><a href="#contact">Start a project</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">X</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Draft Studio. All rights reserved.</span>
+      <span>Designed &amp; built by Draft.</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
